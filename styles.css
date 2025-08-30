@@ -1,20 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
+@font-face {
+    font-family: 'LouBag';
+    src: url('fonts/LouBag-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;}
+
 :root {
-    --laranja-claro: #FF862A;
+    --laranja-claro: #2e2e2e;
     --alto-contraste-fundo: #000000;
     --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+    --alto-contraste-link:   #b30000;
 }
 
 body {
     font-size: 1rem;
     font-family: 'Montserrat';
+    background-color: #1a1a1a;
 }
 
 header {
-    background-color: #ffffff;
+    background-color: #1a1a1a;
 }
 
 
@@ -24,13 +31,15 @@ section {
 
 
 .nav-link {
-    color: #CB6D43;
+    color: #7c2a04;
     font-weight: 600;
 }
 
+
+
 .inicio-fundo {
     /* aula 3 */
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/640px-Deftones_At_the_SPIN_at_Stubb\'s_Party\,_SXSW\,_Austin\,_Texas_2016-9595_\(33941920736\).jpg');
     /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: right;
@@ -39,6 +48,13 @@ section {
     height: 606px;
     padding: 40px;
     margin: 0 auto;
+    
+    
+    font-family: 'LouBag', sans-serif;
+    font-size: 7rem;
+    color: #fffafa;
+    text-shadow: 3px 3px 5px #fc0303;
+   
 }
 
 /* posicionamento para a imagem à direita */
@@ -73,14 +89,17 @@ section {
     text-shadow: -5px 5px var(--laranja-claro);
 }
 
+.p-2 {
+    color:var(--alto-contraste-texto);
+}
 
 #tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
+    background: url('img/Brown_skull_graphic.png') top right no-repeat,
+        url('img/Brown_skull_graphic.png') bottom left no-repeat;
     background-size: 180px 180px;
     /* Ajuste o tamanho conforme necessário */
 }
@@ -97,23 +116,24 @@ section {
 
 h2 {
     font-family: 'Lemon', serif;
-    font-size: 2.5em;
+    font-size: 3em;
     font-style: normal;
-    color: var(--laranja-claro);
+    color: var(--alto-contraste-link);
+    
 }
 
 #galeria {
-    background-color: #FAF4F4;
+    background-color: var(--laranja-claro);
 
 }
 
 .fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background: url('img/Brown_skull_graphic.png') bottom right no-repeat;
     background-size: 180px 180px;
 }
 
 #contato {
-    background-image: url('img/4965007.jpg');
+    background-image: url('img/Deftones_-_Milan_2007_-_001.jpg');
     background-size: cover;
     padding: 4rem 0;
     /* Espaçamento interno para a seção de contato */
@@ -132,7 +152,7 @@ h2 {
 }
 
 .formulario button {
-    background-color: #CB6D43;
+    background-color: #7b2f0c;
     border: none;
     font-weight: bold;
 }
